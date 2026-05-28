@@ -1,0 +1,35 @@
+artifact_path: file:///C:/Users/mvall/Desktop/MLops-BI/LAB_4/MLflow-Iris-Pipeline/src/mlruns/1/models/m-d14557cf5d5a49b9a01f215440cb1657/artifacts
+env_vars:
+- GOOGLE_API_KEY
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-d14557cf5d5a49b9a01f215440cb1657
+model_size_bytes: 1026
+model_uuid: m-d14557cf5d5a49b9a01f215440cb1657
+prompts: null
+run_id: 8a6a7265a90b4891929ab58e12367899
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-03-09 18:16:27.540272'
